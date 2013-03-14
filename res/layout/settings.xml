@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TextView android:id="@+id/pixelbar" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/DateQuitView" android:text="@string/date_quit" android:gravity="center_vertical|center_horizontal|center" android:layout_width="fill_parent" android:textSize="20px" android:paddingTop="2px" android:paddingBottom="2px" android:background="@drawable/gradientbar" android:textColor="@color/bannertextcolor"></TextView>
+<TextView android:id="@+id/pixelbar2" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+
+<DatePicker android:id="@+id/DatePicker01" android:layout_height="wrap_content" android:layout_gravity="right" android:layout_width="fill_parent"></DatePicker>
+<TimePicker android:id="@+id/TimePicker01" android:layout_height="wrap_content" android:layout_width="fill_parent"></TimePicker>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ResetTime" android:text="Reset Date/Time" android:layout_gravity="center_horizontal" android:layout_marginTop="15px" android:layout_marginBottom="10px"></Button>
+
+<TextView android:id="@+id/pixelbar3" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/SmokingHabits" android:text="Smoking Habits" android:gravity="center_vertical|center_horizontal|center" android:layout_width="fill_parent" android:textColor="@color/bannertextcolor" android:textSize="20px" android:paddingTop="2px" android:paddingBottom="2px" android:background="@drawable/gradientbar"></TextView>
+<TextView android:id="@+id/pixelbar4" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/CigsPerDayLayout" android:layout_width="fill_parent">
+<TextView android:layout_height="wrap_content" android:id="@+id/cigarrettesperdaylabel" android:text="@string/cigsperdaylabel" android:layout_width="wrap_content" android:width="140px"></TextView>
+<EditText android:layout_height="wrap_content" android:id="@+id/cigarrettesperdayvalue" android:text="20" android:numeric="integer" android:layout_width="wrap_content">
+</EditText>
+<Button android:layout_height="wrap_content" android:textStyle="bold" android:id="@+id/cpdDecrement" android:text="@string/Decrement" android:layout_width="wrap_content"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/cpdIncrement" android:text="@string/Increment" android:layout_width="wrap_content"></Button>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CostPerPackLayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CostPerPackLabel" android:text="@string/costperpacklabeltext" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CostPerPackValue" android:numeric="decimal"></EditText>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LifeSavedPerCig" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LifeSavedPerCigLabel" android:text="@string/mintespercig" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LifeSavedPerCigValue" android:numeric="integer"></EditText>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/DecrementLife" android:text="@string/Decrement"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/IncrementLife" android:text="@string/Increment"></Button>
+</LinearLayout>
+
+<TextView android:id="@+id/pixelbar5" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/Notifications" android:text="Notifications" android:gravity="center_vertical|center_horizontal|center" android:layout_width="fill_parent" android:textColor="@color/bannertextcolor" android:textSize="20px" android:paddingTop="2px" android:paddingBottom="2px" android:background="@drawable/gradientbar"></TextView>
+<TextView android:id="@+id/pixelbar6" android:layout_width="fill_parent" android:background="@drawable/gradienthorizontal" android:layout_height="1px"></TextView>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/SendNotifications" android:text="Send Notifications"></CheckBox>
+
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Milestones" android:text="Milestones"></CheckBox>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Twidroid" android:text="Twitter notifications"></CheckBox>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterLayout" android:orientation="vertical">
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterUserLayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterUserLabel" android:width="140px" android:text="Twitter Id :"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterUserValue" android:width="150px"></EditText>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterPWLayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterPWLabel" android:width="140px" android:text="Twitter PW :"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TwitterPWValue" android:password="true" android:width="150px"></EditText>
+</LinearLayout>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CheckTwitter" android:text="Test Twitter Id and Password" android:layout_gravity="center_horizontal"></Button>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/NotificationLayoutPref" android:orientation="vertical">
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/NotificationsLayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyLabel" android:text="Update for every" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyValue" android:numeric="integer"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyDaysLabel" android:text="days"></TextView>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/cigslayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyLabel1" android:text="" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencycigsValue" android:numeric="integer"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencycigsDaysLabel" android:text="cigarettes"></TextView>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dollarfrequencylayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyLabel2" android:text="" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencycurrencyValue" android:numeric="integer"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencycigscurrencyLabel" android:text="dollars"></TextView>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lifefrequencylayout" android:orientation="horizontal">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencyLabele" android:text="" android:width="140px"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencylifeValue" android:numeric="integer"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frequencylifeLabel" android:text="days saved"></TextView>
+</LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/LayoutButtons" android:orientation="horizontal" android:paddingLeft="40px">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Cancel" android:text="@string/cancel" android:width="100px" ></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Save" android:text="@string/savebutton" android:width="100px"></Button>
+
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

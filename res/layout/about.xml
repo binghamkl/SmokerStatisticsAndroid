@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AboutScrollView"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout android:id="@+id/AboutLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="20px" android:paddingRight="20px">
+
+<TextView android:id="@+id/TitleLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Smoking Statistics" android:gravity="center_vertical|center_horizontal" android:textSize="30px" android:textColor="#2222FF" android:paddingTop="10px" android:paddingBottom="15px"></TextView>
+<TextView android:id="@+id/Description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/AboutString" android:gravity="center_vertical|center_horizontal" android:textColor="#FFFFDD" android:paddingBottom="20px"></TextView>
+<LinearLayout android:id="@+id/AuthorLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" android:orientation="vertical">
+<TextView android:id="@+id/AuthorLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Author" android:gravity="center_vertical|center_horizontal"></TextView>
+<TextView android:id="@+id/AuthorValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" android:autoLink="email" android:text="bingham.kendall@gmail.com">
+</TextView>
+<TextView android:id="@+id/blogURL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" android:paddingBottom="20px" android:text="http://smokingstats.blogspot.com" android:autoLink="web"></TextView>
+
+</LinearLayout>
+<LinearLayout android:id="@+id/VersionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" android:orientation="vertical">
+<TextView android:id="@+id/Version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"></TextView>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

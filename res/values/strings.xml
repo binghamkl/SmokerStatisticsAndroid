@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Smoker Statistics</string>
+    <string name="app_name">Smoker Statistics</string>
+<string name="date_quit">Date Quit : </string>
+<string name="time_quit">Time Quit : </string>
+<string name="settings_menu">Settings</string>
+<string name="about_menu">About</string>
+<string name="settings_name">Settings</string>
+<string name="savebutton">Save</string>
+<string name="smokingtime">You have been quit for ...</string>
+<string name="quittime">Scheduled to quit smoking in ...</string>
+<string name="cigsperdaylabel">Cigarettes per day : </string>
+
+<string name="costperpacklabeltext">Cost per pack : </string>
+<string name="mintespercig">Life / cig ( minutes ) : </string>
+<string name="Decrement">-</string>
+<string name="Increment">+</string>
+<string name="moneysavedcaption">You have saved : </string>
+<string name="life_saved">Life gained : </string>
+<string name="cigsNotSmoked">Cigarettes not smoked : </string>
+<string name="alert">There have been unresolved errors.</string>
+<string name="cancel">Cancel</string>
+<string name="AboutString">This program was created in an effort to help me quit again, and to hopefully help others quit.</string>
+</resources>

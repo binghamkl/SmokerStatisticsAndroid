@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingBottom="5px" android:paddingLeft="5px" android:paddingRight="5px" android:paddingTop="5px" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#0000DD">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingBottom="5px" android:paddingLeft="5px" android:paddingRight="5px" android:paddingTop="5px">
+
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:id="@+id/LinearSmokingStats" 
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" android:paddingLeft="10px" android:paddingRight="10px" android:paddingTop="10px" android:paddingBottom="10px" >
+
+<TextView android:layout_height="wrap_content" android:id="@+id/TextStatHeader" android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:textColor="@color/bannertextcolor"></TextView>
+<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/TextDifferenceValue" android:gravity="center_vertical|center_horizontal" android:background="@color/bannerbackground" android:textSize="25px" android:textColor="#FF0000">
+</TextView>
+
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/LinearSavings" android:layout_width="fill_parent" android:paddingBottom="5px" android:paddingTop="5px" android:paddingLeft="10px"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/MoneySavedLabel" android:text="@string/moneysavedcaption" android:paddingRight="5px" android:width="160px"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Currency" android:textColor="#FFFFFF"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/moneysavedvalue" android:textColor="#FFFFFF"></TextView>
+
+</LinearLayout><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LinearLifeSavings" android:paddingTop="5px" android:paddingBottom="5px" android:paddingLeft="10px"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lifesavedlabel" android:text="@string/life_saved" android:paddingRight="5px" android:width="160px"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lifeSavedValue" android:textColor="#FFFFFF"></TextView>
+</LinearLayout>
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LinearCigsNotSmoked" android:paddingBottom="5px" android:paddingTop="5px" android:paddingLeft="10px"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CigsNotSmokedLabel" android:text="@string/cigsNotSmoked" android:paddingRight="5px" android:width="160px"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/cigsNotSmokedValue" android:textColor="#FFFFFF"></TextView>
+
+</LinearLayout>
+
+
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="10px" android:paddingRight="10px" android:paddingLeft="10px" android:paddingBottom="10px" android:layout_width="fill_parent" android:background="#0000BB"><TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="Milestones" android:textColor="@color/bannertextcolor" android:background="@color/bannerbackground" android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent"></TextView><TextView android:id="@+id/milestone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#DDDD00" android:paddingBottom="10px" android:paddingLeft="10px" android:paddingRight="10px" android:paddingTop="10px"></TextView>
+</LinearLayout>
+
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/SaveButtonLayouts" android:orientation="horizontal" android:layout_width="fill_parent"><Button android:id="@+id/SendTweet" android:layout_height="wrap_content" android:text="Send Tweet" android:layout_width="wrap_content" android:layout_weight="1"></Button><Button android:layout_height="wrap_content" android:id="@+id/ClipboardButton" android:text="Copy to Clipboard" android:layout_width="wrap_content"></Button>
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>
